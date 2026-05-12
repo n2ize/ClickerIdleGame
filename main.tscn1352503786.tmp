@@ -1,0 +1,64 @@
+[gd_scene format=3 uid="uid://b3lvcuomma2f6"]
+
+[ext_resource type="Script" uid="uid://devv2nr3xlixv" path="res://game_manager.gd" id="1_ig7tw"]
+
+[node name="main" type="Node" unique_id=1890786213]
+
+[node name="HBoxContainer" type="HBoxContainer" parent="." unique_id=862626379]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="PlayerPanel1" type="VBoxContainer" parent="HBoxContainer" unique_id=1266576260]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="HBoxContainer/PlayerPanel1" unique_id=1492202143]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/PlayerPanel1" unique_id=1927628956]
+layout_mode = 2
+size_flags_horizontal = 4
+
+[node name="Label2" type="Label" parent="HBoxContainer/PlayerPanel1" unique_id=119107762]
+layout_mode = 2
+
+[node name="CenterPanel" type="VBoxContainer" parent="HBoxContainer" unique_id=687230262]
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="HBoxContainer/CenterPanel" unique_id=107998678]
+layout_mode = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="HBoxContainer/CenterPanel" unique_id=1782755452]
+layout_mode = 2
+
+[node name="Card1" type="Button" parent="HBoxContainer/CenterPanel/HBoxContainer" unique_id=291458]
+layout_mode = 2
+
+[node name="Card2" type="Button" parent="HBoxContainer/CenterPanel/HBoxContainer" unique_id=1444927196]
+layout_mode = 2
+
+[node name="Card3" type="Button" parent="HBoxContainer/CenterPanel/HBoxContainer" unique_id=659733786]
+layout_mode = 2
+
+[node name="PlayerPanel2" type="VBoxContainer" parent="HBoxContainer" unique_id=978556005]
+layout_mode = 2
+size_flags_horizontal = 8
+size_flags_vertical = 4
+
+[node name="Label" type="Label" parent="HBoxContainer/PlayerPanel2" unique_id=232561704]
+layout_mode = 2
+
+[node name="ProgressBar" type="ProgressBar" parent="HBoxContainer/PlayerPanel2" unique_id=1597602687]
+layout_mode = 2
+
+[node name="Label2" type="Label" parent="HBoxContainer/PlayerPanel2" unique_id=15464928]
+layout_mode = 2
+
+[node name="GameManager" type="Node" parent="." unique_id=319019320]
+script = ExtResource("1_ig7tw")
