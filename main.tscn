@@ -47,4 +47,9 @@ offset_bottom = 48.5
 grow_horizontal = 2
 grow_vertical = 2
 
+[node name="UpgradeContainer" type="VBoxContainer" parent="Control" unique_id=820873926]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
 [connection signal="pressed" from="Control/Button" to="Control" method="_on_button_pressed"]

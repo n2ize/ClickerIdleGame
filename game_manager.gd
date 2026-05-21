@@ -1,4 +1,6 @@
 extends Node
+@onready var upgrade_container = $"../Control/UpgradeContainer"
+
 
 var cookies = 0
 var upgrades = {
@@ -18,6 +20,9 @@ var upgrades = {
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+	for upgrade_name in upgrades:
+		var button = button.new()
+		button.text = upgrade_name + "(costs"
 	pass # Replace with function body.
 
 
