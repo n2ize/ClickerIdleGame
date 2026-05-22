@@ -11,8 +11,13 @@ config_version=5
 [application]
 
 config/name="ClickerIdleGame"
+run/main_scene="uid://b3lvcuomma2f6"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
+
+[display]
+
+window/stretch/mode="viewport"
 
 [physics]
 
