@@ -11,10 +11,9 @@ func _ready() -> void:
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
+	label.text = str(game_manager.cookies) + " quacks"
 	pass
 
 
 func _on_button_pressed() -> void:
 	game_manager.add_quack()
-	label.text = str(game_manager.cookies) + " quacks"
-	pass # Replace with function body.
